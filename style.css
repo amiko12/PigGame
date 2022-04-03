@@ -26,7 +26,7 @@ img{
     margin: 0 auto;
     margin-top: 95px;
 }
-.box, .box2{
+.box, #player2{
     max-width: 450px;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.4);

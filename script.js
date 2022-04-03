@@ -44,6 +44,8 @@ function roll(){
         var player2 = document.getElementById('player2');
         player2.classList.toggle('active');
         player1.classList.remove('active1');
+        
+            
     }
     else{
         var player1 = document.getElementById('player1');
@@ -55,29 +57,45 @@ function roll(){
     var player2CN = document.getElementById('player2CN');
     
     
-        
-        if(random > 0){   
-            var current = random + 1;
-            var y =parseInt(player1CN.textContent);  
-            var sum = y + current;
-            player1CN.innerText = sum;
+    
+
+    
+    if(random > 0){   
+        var current = random + 1;
+        var y =parseInt(player1CN.textContent);  
+        var sum = y + current;
+        player1CN.innerText = sum;
         
 
-        }
-        else if (random == 0){
-            player1CN.innerText = 0;
-            var counter = random + 1;
-            var z =parseInt(player1CN.textContent);
-            var sum1 = z + counter;
-            player2CN.innerText = sum1;
-        };
-       
+    } 
+    else if (random == 0){
+        player1CN.innerText = 0;
+        var counter = random + 1;
+        var z =parseInt(player1CN.textContent);
+        var sum1 = z + counter;
+        player2CN.innerText = sum1;
+        console.log('amiko');
+    };
+         
+        
 };
 
 
 
+    
+    
+document.getElementById('hold').addEventListener('click', ()=>{
+    hold()
+})
 
 
+function hold () {
 
-
+            var x = parseInt(player1CN.textContent);
+            var score = document.getElementById('realscore');
+            var s = parseInt(score.textContent);
+            var realscore = s + x;
+            score.innerText = realscore;
+            player1CN.innerText = 0;
+};
 
