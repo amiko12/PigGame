@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pig Game</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
-    <div class="wrapper" id="x">
+    <div class="wrapper" >
         <div class="box" id="player1">
             <div>
                 <h1>PLAYER 1</h1>
@@ -18,6 +19,13 @@
                 <p style="font-size: 20px;">CURRENT</p>
                 <p class="p" id="player1CN" style="font-size: 50px;">0</p>
             </div>
+        </div> 
+        <div class="btndiv">
+            <div id="x">
+
+            </div>
+            <button class="btn" onclick="roll()" id="start" style="margin-top:38px;">START GAME</button>
+            <button class="btn"  id="hold" style="margin-top:15px; display: none;">HOLD</button>
         </div>
         <div  id="player2">
             <div>
@@ -30,9 +38,7 @@
             </div>
 
         </div>
-        
-        <button class="btn" onclick="roll()">ROLL DICE</button>
-        <button class="btn"  id="hold">HOLD</button>
+       
     </div>
 
 

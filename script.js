@@ -28,7 +28,11 @@ var array = [
     }
 ];
 
-
+    var start = document.getElementById('start');
+    start.addEventListener('click', ()=>{
+        document.getElementById('hold').style.display = 'block'
+        start.innerText = 'ROLL DICE'
+    });
 
 
 function roll(){
@@ -37,7 +41,9 @@ function roll(){
     img.src = array[random].image;
     var block = document.getElementById('x');
     block.appendChild(img);
-    img.style.display = 'inline-block';
+    img.style.display = 'block';
+    /////////////////////////////////////////////////////
+    
     /////////////////////////////////////////////////////
     if(random == 0){
         var player1 = document.getElementById('player1');

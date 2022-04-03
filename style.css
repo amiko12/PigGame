@@ -10,19 +10,17 @@ body{
     background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
 }
 img{
-    display: inline-block;
-    position: absolute;
-    width: 150px;
+    
+    max-width: 150px;
+    width: 100%;
     height: 150px;
-    left: 45%;
-    top: 30%;
-    display: none;
+    display: none; 
 }
 .wrapper{
     display: flex;
     max-width:900px;
+    width: 100%;
     height: 500px;
-    
     margin: 0 auto;
     margin-top: 95px;
 }
@@ -52,26 +50,32 @@ img{
 }
 .count{
     max-width: 190px;
+    
     height: 120px;
     background-color: #c7365f;
     border-radius: 9px;
-    margin-left: 120px;
+    margin: 0 auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 .btn{
-    display: inline-block;
-    position: absolute;
-    top: 62%;
-    left: 47%;
+    
     border-radius: 9px;
     cursor: pointer;
     padding: 8px 10px;
     background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 0 1.75rem 3.5rem rgb(0 0 0 / 10%);
 }
-#hold{
-    top: 69%;
-    left: 48%;
+
+.btndiv{
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    margin-top: 130px;
 }
