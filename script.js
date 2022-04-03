@@ -28,11 +28,11 @@ var array = [
     }
 ];
 
-    var start = document.getElementById('start');
-    start.addEventListener('click', ()=>{
-        document.getElementById('hold').style.display = 'block'
-        start.innerText = 'ROLL DICE'
-    });
+var start = document.getElementById('start');
+start.addEventListener('click', ()=>{
+    document.getElementById('hold').style.display = 'block'
+    start.innerText = 'ROLL DICE'
+});
 
 
 function roll(){
@@ -97,11 +97,12 @@ document.getElementById('hold').addEventListener('click', ()=>{
 
 function hold () {
 
-            var x = parseInt(player1CN.textContent);
-            var score = document.getElementById('realscore');
-            var s = parseInt(score.textContent);
-            var realscore = s + x;
-            score.innerText = realscore;
-            player1CN.innerText = 0;
+    var x = parseInt(player1CN.textContent);
+    var score = document.getElementById('realscore');
+    var s = parseInt(score.textContent);
+    var realscore = s + x;
+    score.innerText = realscore;
+    player1CN.innerText = 0;
+    player2.classList.add('active');
 };
 
