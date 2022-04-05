@@ -34,7 +34,7 @@ var player2 = document.getElementById("player2");
 var start = document.getElementById("start");
 start.addEventListener("click", () => {
   document.getElementById("hold").style.display = "block";
-  start.innerText = "ROLL DICE";
+  start.innerText = "🎲 Roll Dice";
 });
 //////////////////////////////////////////////////////////////
 var block = document.getElementById("x");

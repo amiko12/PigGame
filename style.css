@@ -60,6 +60,7 @@ img {
   padding: 8px 10px;
   background-color: rgba(255, 255, 255, 0.6);
   box-shadow: 0 1.75rem 3.5rem rgb(0 0 0 / 10%);
+  font-size: 20px;
 }
 
 .btndiv {
@@ -83,4 +84,5 @@ img {
   background-color: rgba(255, 255, 255, 0.6);
   box-shadow: 0 1.75rem 3.5rem rgb(0 0 0 / 10%);
   display: none;
+  font-size: 20px;
 }
